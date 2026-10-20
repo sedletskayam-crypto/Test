@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи № 1007</title>
+        <style>
+        a:hover {
+            background-color: yellow;
+        }
+        a.active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="image/mainimj.jpeg" alt="TV Girl — на главную" width="60" height="40"></a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="info.html">История</a></li>
+                <li><a href="table.html">Дискография</a></li>
+                <li><a href="form.html">Приобрести билет на концерт</a></li>
+                <li><a href="DOM.html">DOM_JS. Считываем информацию из DOM</a></li>
+                <li><a href="passport.html">Изменяем кириллицу на латиницу по клику</a></li>
+                <li><a href="task.html">Решение алгоритмической задачи</a></li>
+                <li><a href="https://tvgirl.bandcamp.com/" target="_blank" rel="noopener">Официальный сайт группы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <h1>Решение алгоритмической задачи</h1>
+
+        <section>
+            <h2>Задача № 1007</h2>
+            <p>Имеются две ёмкости: кубическая с ребром A, цилиндрическая с высотой H и радиусом
+                основания R. Определить, поместится ли жидкость объёма M в первую ёмкость,
+                во вторую, в обе.</p>
+            <p>Решение: объём куба V<sub>1</sub> = A³, объём цилиндра
+                V<sub>2</sub> = π·R²·H. Жидкость помещается в ёмкость, если M ≤ V.
+                Отсюда четыре возможных ответа: в обе ёмкости, только в кубическую,
+                только в цилиндрическую, ни в одну.</p>
+        </section>
+
+        <div>
+            <form action="https://www.google.com" target="_blank" id="UserEnter" name="UserEnter">
+                <input type="hidden" name="task_number" value="1007">
+
+                <div>
+                    <label>Формулировка задачи</label>
+                    <textarea name="formulation" rows="4" cols="60" readonly>Имеются две ёмкости: кубическая с ребром A, цилиндрическая с высотой H и радиусом основания R. Определить, поместится ли жидкость объёма M в первую ёмкость, во вторую, в обе.</textarea>
+                </div>
+
+                <div>
+                    <div>
+                        <label>A — ребро куба </label>
+                        <input type="number" name="A" value="10">
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <label>H — высота цилиндра</label>
+                        <input type="number" name="H" value="10">
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <label>R — радиус основания</label>
+                        <input type="number" name="R" value="5">
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <label>M — объём жидкости</label>
+                        <input type="number" name="M" value="800" >
+                        <p></p>
+                    </div>
+                </div>
+                <p>Положительные числа в одних единицах (например, в сантиметрах и кубических сантиметрах), можно дробные.</p>
+
+                <div>
+                    <label>Результат решения задачи</label>
+                    <input type="text" id="result" name="result" value="не определён">
+                </div>
+
+              <div>
+    <input type="button" id="verify" value="Проверить">
+    <input type="button" id="send" value="Отправить">
+    <input type="reset" value="Очистить">
+</div>
+</form>
+
+</div>
+
+<script src="scripts/task.js"></script>
+</body>
+</html>

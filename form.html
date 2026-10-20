@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Приобрести билет на концерт</title>
+        <style>
+        a:hover {
+            background-color: yellow;
+        }
+        a.active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="image/mainimj.jpeg" alt="TV Girl — на главную" width="60" height="40"></a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="info.html">История</a></li>
+                <li><a href="table.html">Дискография</a></li>
+                <li><a href="form.html">Приобрести билет на концерт</a></li>
+                <li><a href="DOM.html">DOM_JS. Считываем информацию из DOM</a></li>
+                <li><a href="passport.html">Изменяем кириллицу на латиницу по клику</a></li>
+                <li><a href="task.html">Решение алгоритмической задачи</a></li>
+                <li><a href="https://tvgirl.bandcamp.com/" target="_blank" rel="noopener">Официальный сайт группы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Приобрести билет на концерт</h1>
+
+        <section>
+            <h2>Ваши контактные данные</h2>
+            <p>Оставьте свои данные, чтобы получать информацию о ближайших концертах.</p>
+            <form action="https://google.com" method="get" target="_blank" name="contacts">
+                <fieldset>
+                    <legend>Личные данные</legend>
+                    <p><label for="last_name">Фамилия</label>
+                       <input type="text" id="last_name" name="last_name"></p>
+                    <p><label for="first_name">Имя</label>
+                       <input type="text" id="first_name" name="first_name"></p>
+                    <p><label for="middle_name">Отчество (если есть)</label>
+                       <input type="text" id="middle_name" name="middle_name"></p>
+                    <p><label for="group">Группа</label>
+                       <input type="text" id="group" name="group"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Контакты</legend>
+                    <p><label for="phone">Мобильный телефон</label>
+                       <input type="tel" id="phone" name="phone" placeholder="+79991234567"></p>
+                    <p><label for="email">Электронная почта</label>
+                       <input type="email" id="email" name="email"></p>
+                    <p><label for="send_date">Дата отправки</label>
+                       <input type="date" id="send_date" name="send_date"></p>
+                </fieldset>
+                <p><input type="submit" value="Отправить"> <input type="reset" value="Очистить"></p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Заказ билета на концерт</h2>
+            <form action= "https://google.com"  method="get" target="_blank" name="ticket_order">
+                <input type="hidden" name="concert_id" value="tvgirl_moscow_2026">
+
+                <p><label for="buyer_name">Имя покупателя</label>
+                   <input type="text" id="buyer_name" name="buyer_name" value="Покупатель"></p>
+
+                <p><label for="tickets_count">Количество билетов</label>
+                   <input type="number" id="tickets_count" name="tickets_count" value="1" min="1" max="10"></p>
+
+                <fieldset>
+                    <legend>Тип билета</legend>
+                    <label><input type="radio" name="ticket_type" value="dance_floor" checked> Танцпартер</label><br>
+                    <label><input type="radio" name="ticket_type" value="balcony"> Балкон</label><br>
+                    <label><input type="radio" name="ticket_type" value="vip"> VIP</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Мерч к заказу</legend>
+                    <label><input type="checkbox" name="merch_tshirt" value="yes" checked> Футболка TV Girl</label><br>
+                    <label><input type="checkbox" name="merch_vinyl" value="yes"> Винил «French Exit»</label>
+                </fieldset>
+
+                <p><label for="concert_date">Дата концерта</label>
+                   <input type="date" id="concert_date" name="concert_date" value="2026-12-12"></p>
+
+                <p><label for="account_password">Пароль личного кабинета</label>
+                   <input type="password" id="account_password" name="account_password" value="tvgirl2026"></p>
+
+                <p><input type="submit" value="Заказать"> <input type="reset" value="Сбросить"></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
